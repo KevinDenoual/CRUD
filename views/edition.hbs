@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="{{ _id }}?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>Etoile</label>
+                            <input class="form-control" type="text" name="etoile" value="{{ etoile}}">
+                        </div>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <input class="form-control" type="text" name="type" value="{{ type }}">
+                        </div>
+                        <div class="form-group">
+                            <label>Distance</label>
+                            <input class="form-control" type="text" name="distance" value="{{ distance }}">
+                        </div>
+                        <div>
+                            <input type="file" name="imgEtoile" value="{{ imgEtoile }}">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>                                      
+                    </form>
+                    <a href="/"><p>Retourner sur la page d'accueil</p>
+        </div>
+    </div>
+</div>
